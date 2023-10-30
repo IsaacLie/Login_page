@@ -1,0 +1,132 @@
+body {
+    font-size: 17px;
+    background-image: url(.images/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.loginbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 50px 0;
+    margin: 100px 0;
+    width: 300px;
+    height: 330px;
+    box-shadow: 0 0 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.loginvalue h2 {
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 0 0px 10px black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 80px;
+}
+
+.loginvalue input {
+    font-size: 17px;
+    position: relative;
+    bottom: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+    transition: 0.3s ease-in;
+}
+
+.loginvalue input::placeholder {
+    color: rgba(255,255, 255, 0.5);
+    transition: 0.3s ease-in;
+}
+
+.loginvalue input::placeholder:focus {
+    font-size: 15px;
+    color:rgba(255,255, 255, 0.5);
+    display: flex;
+    text-align: start;
+}
+
+.loginvalue input:focus {
+    outline: none;
+    font-size: 20px;
+}
+
+.loginvalue input:focus::placeholder {
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+}
+
+.bottom {
+    background-color: white;
+}
+
+button {
+    position: absolute;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 260px;
+    height: 45px;
+    border-radius: 100px;
+    left: 18px;
+    bottom: 70px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+button:focus {
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#fp {
+    position: absolute;
+    left: 43px;
+    font-size: 13px;
+    bottom: 180px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#fp:focus {
+    color: white;
+}
+
+#fp:hover {
+    text-decoration: underline;
+}
+
+#register {
+    position: absolute;
+    left: 39%;
+    font-size: 17px;
+    bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+#register:hover {
+    color: white;
+    text-decoration: underline;
+}
